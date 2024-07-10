@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+nav {
+  margin-top: 2rem;
+  border-radius: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.5rem;
+  background-color: rgb(5, 5, 130);
+}
+
+.left h1 {
+  margin-left: 2rem;
+  font-size: 3.5rem;
+}
+
+.left h1:hover {
+  color: rgb(202, 17, 66);
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 3rem;
+  font-size: 2.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 37, 37);
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.leftSection {
+  margin-top: 6rem;
+  font-size: 4.5rem;
+  width: 585px;
+}
+
+.leftSection button {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.leftSection button a {
+  color: white;
+  text-decoration: none;
+}
+
+.rightSection {
+  margin-top: 2.5rem;
+  width: 55rem;
+}
+
+.rightSection img {
+  width: 100%;
+}
+
+.purple {
+  color: chartreuse;
+}
+
+.leftSection button:hover {
+  background-color: rgb(200, 28, 28);
+}
+
+.leftSection a:hover {
+  color: white;
+}
+
+#element {
+  color: chartreuse;
+}
+
+#second-section {
+  margin: auto;
+  font-size: 3.5rem;
+  height: auto;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10rem;
+}
+
+.skill {
+  height: 13rem;
+  width: 13rem;
+  margin: 4.5rem;
+}
+
+.skill img {
+  height: 14.9rem;
+  width: 14.9rem;
+  transform: scale(1.2);
+  border-radius: 8rem;
+}
+
+.skill img:hover {
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+/* Project */
+
+#third-section {
+  height: auto;
+  width: 99%;
+  margin-top: 15rem;
+}
+
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  width: 98%;
+}
+
+.project {
+  display: grid;
+  place-items: center;
+  height: 25rem;
+  width: 300px;
+  padding: 4rem;
+}
+
+
+
+.project:hover {
+  opacity: 0.5;
+}
+
+.project img {
+  border-radius: 2rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#fourth-section {
+  margin-top: 12rem;
+  height: auto;
+  width: 99%;
+}
+
+.about-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-left {
+  margin-top: 6rem;
+  font-size: 2rem;
+  width: 50%;
+}
+
+.about-left span {
+  font-weight: bold;
+  font-style: italic;
+  color: chartreuse;
+}
+
+.about-right {
+  display: grid;
+  place-content: center;
+  margin-left: 5rem;
+  border-radius: 5rem;
+}
+
+.about-right img {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 100%;
+}
+
+.about-right img:hover {
+  cursor: pointer;
+}
+
+#contactForm {
+  margin: auto;
+  text-align: center;
+  height: auto;
+  margin-top: 8rem;
+}
+
+#contactForm input {
+  width: 85%;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#contactForm button {
+  border-radius: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.5rem;
+  padding: 1.3rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+#contactForm label {
+  font-size: 2rem;
+}
+
+#message {
+  height: 10rem;
+  width: 85%;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#responseMessage {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgb(31, 8, 115);
+  color: white;
+  text-align: center;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .firstSection {
+    flex-direction: column;
+  }
+
+  .leftSection {
+    font-size: 3rem;
+    width: 90%;
+  }
+
+  .rightSection {
+    width: 90%;
+  }
+
+  .skill-box {
+    padding: 5rem;
+  }
+
+  .skill {
+    margin: 2rem;
+  }
+
+  .project-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-left, .about-right {
+    width: 90%;
+    margin: 2rem 0;
+  }
+
+  #contactForm input, #contactForm textarea, #message {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .left h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .leftSection {
+    font-size: 2.5rem;
+    margin: 1rem;
+    width: 95%;
+  }
+
+  .rightSection img {
+    width: 100%;
+  }
+
+  .skill-box {
+    padding: 2rem;
+  }
+
+  .skill {
+    margin: 1rem;
+  }
+
+  .project-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .about-left, .about-right {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  #contactForm input, #contactForm textarea, #message {
+    width: 90%;
+  }
+}

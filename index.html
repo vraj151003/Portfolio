@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <h1>Vraj's Portfolio</h1>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#second-section">Skills</a></li>
+            <li><a href="#third-section">Projects</a></li>
+            <li><a href="#fourth-section">About Me</a></li>
+            <li><a href="#footer-section">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, I am <span class="purple">Vraj</span><br />
+          and I am a Passionate <br>
+          <span id="element"></span>
+          <br>
+          <button>
+            <a
+              href="Assets/LDCE_IT_DHRUVKUMAR VANIYA_RESUME.pdf"
+              download
+              class="download-button"
+              >Download Resume</a
+            >
+          </button>
+          <br /><br />
+          <a href="https://github.com/dhruv-vaniya19" target="_blank"
+            ><i class="fa-brands fa-github"></i></a
+          >&nbsp;&nbsp;
+          <a
+            href="https://www.linkedin.com/in/dhruv-vaniya-018b1b245/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i></a
+          >&nbsp;&nbsp;
+          <a
+            href="https://www.instagram.com/dhruv_vaniya19/?next=%2F"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i></a
+          >&nbsp;&nbsp;
+          <a href="https://www.facebook.com/dhruv.vaniya.31/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+
+        <div class="rightSection">
+          <img src="Assets/bg1.png" alt="" />
+        </div>
+      </section>
+
+      <section id="second-section">
+        <h1 class="heading">Skills</h1>
+        <div class="skill-box">
+          <div class="skill"><img src="Assets/c.png" alt="" /></div>
+          <div class="skill"><img src="Assets/java.png" alt="" /></div>
+          <div class="skill"><img src="Assets/html5.png" alt="" /></div>
+          <div class="skill"><img src="Assets/css.png" alt="" /></div>
+          <div class="skill"><img src="Assets/js.png" alt="" /></div>
+          <div class="skill"><img src="Assets/reactjs.png" alt="" /></div>
+          <div class="skill"><img src="Assets/nodejs.png" alt="" /></div>
+          <div class="skill"><img src="Assets/php.png" alt="" /></div>
+          <div class="skill"><img src="Assets/mysql.png" alt="" /></div>
+          <div class="skill"><img src="Assets/mongodb.png" alt="" /></div>
+        </div>
+      </section>
+
+      <section id="third-section">
+        <h1 class="heading">Projects</h1>
+        <div class="project-box">
+          <div class="project">
+            <img src="Assets/e-commerce.jpg" alt="" /><br />
+            <div class="text">E-Commerce Website</div>
+          </div>
+          <div class="project">
+            <img src="Assets/weather-app.jpg" alt="" />
+            <div class="text">Weather-App</div>
+          </div>
+          <div class="project">
+            <img src="Assets/netflix.jpg" alt="" />
+            <div class="text">Netflix Clone</div>
+          </div>
+          <br />
+          <div class="project">
+            <img src="Assets/tic-tac-toe.jpg" alt="" />
+            <div class="text">Tic-Tac-Toe Game</div>
+          </div>
+          <div class="project">
+            <img src="Assets/simon.jpg" alt="" />
+            <div class="text">Simon Game</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fourth-section">
+        <h1 class="heading">About Me</h1>
+        <div class="about-box">
+          <div class="about-left">
+            <p>
+              Hello! I'm <span>Vraj Patel</span>, a passionate and dedicated
+              web developer eager to embark on my professional journey. I am
+              pursing with a degree in <span>IT</span> from
+              <span>L.D. College of Engineering, Ahmedabad</span>, where I am
+              developing a strong foundation in web technologies such as HTML,
+              CSS, JavaScript, and React. Throughout my academic career, I have
+              worked on several projects that allowed me to apply my skills in
+              creating responsive and user-friendly websites. I am excited to
+              continue learning and growing in the field, and I am enthusiastic
+              about the opportunity to contribute to innovative web development
+              projects.
+            </p>
+          </div>
+          <div class="about-right">
+            <img src="Assets/vraj.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-section">
+      <h2 class="heading">Contact Me</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="responseMessage"></div>
+      <div class="footer">
+        <p> <p>&copy; 2024 Vraj Patel. All rights reserved.</p></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Developer</i>', '&amp; <i>Programmer.</i>'],
+      typeSpeed: 40,
+    });
+  </script>
+  </body>
+</html>
